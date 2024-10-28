@@ -6,11 +6,10 @@ body{
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
 
-}
 
 nav ul{
   display: flex;
@@ -72,11 +71,12 @@ nav ul li{
 }
 #myProgressBar{
   width: 1200px;
-
+  cursor: pointer;
 }
 
 
 .songItem{
+  box-sizing: border-box;
   height: 50px;
   display: flex;
   background-color: rgb(104, 226, 79);
@@ -94,23 +94,36 @@ nav ul li{
   border-radius: 50%;
 }
 
-.play-icon{
+.songlistplay{
+  display: flex;
+  box-sizing: border-box;
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-right: 10px;
   cursor: pointer;
   
+  
 }
-
+.play-icon{
+  margin-top: 15px;
+}
 .songName{
   font-weight: bold;
   font-size: 25px;
   line-height: 15px;
   color: rgb(105, 12, 12);
   
+  
 }
 
 .timestamp{
-  margin-left: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
 }
+
+
 
 .songInfo{
   top: 8vh;
